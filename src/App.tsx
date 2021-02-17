@@ -1,8 +1,6 @@
 /**
- * Key takeaway: we can use map in combination with higher-order
- *  functions to make our code more concise
- *
- * TASK: replace the QWERTY row by also using a map
+ * Key takeaway: handling array state often requires us to
+ *  use the update callback argument for setState
  */
 
 import { useState } from "react";
@@ -43,7 +41,7 @@ function App() {
 
   return (
     <div>
-      <h1>Fizzbuzz</h1>
+      <h1>Let's play Fizzbuzz!</h1>
       <h2>Next number: {nextNumber}</h2>
       <p>
         <b>List so far:</b> {fizzbuzzList.join(", ")}
